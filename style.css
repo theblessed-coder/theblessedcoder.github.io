@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
     text-decoration: none;
@@ -64,7 +64,13 @@ section {
     display: flex;
     align-items: center;
     padding: 0rem 9%;
-    background: url('') no-repeat;
+    background-image: no-repeat;
+}
+
+.home-image img {
+    width: 500px;
+    border-radius: 70%;
+    margin-left: 10rem;
 }
 
 .home-content {
@@ -347,8 +353,11 @@ span {
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-content: space-between;
-    margin: 3rem 0;
+    grid-gap: 3.5rem;
+    padding: 5rem 0 5rem 2rem;
+    border: 0.2rem solid #ff1496;
+    border-radius: 0.5rem;
+    background: #0d3857;
 }
 .skill-set h2 {
     text-align: center;
