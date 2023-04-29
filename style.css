@@ -21,18 +21,16 @@ body {
 /* header starts here */
 .header {
     position: fixed;
+    transition: top 0.3s;
     top: 0;
-    left: 0;
     width: 100%;
     padding: 2rem 18rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
 
 .logo {
-    position: relative;
     font-size: 2.5rem;
     color: #ffffff;
     text-decoration: none;
