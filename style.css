@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #ffffff;
+    background-color: #081b29;
+}
+
+/* header starts here */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+} 
+
+.navbar a {
+    font-size: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 200;
+    margin-left: 3.5rem;
+}
+
+.navbar a:hover,
+.navbar .span {
+    color: #ff1496;
+}
+
+/* header ends here */
+
+/* home section starts here */
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    padding: 0rem 9%;
+    background: url('') no-repeat;
+}
+
+.home-content {
+    max-width: 60rem;
+}
+
+.home-content h1 {
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.home-content .text-animate {
+    width: 32.8rem;
+}
+
+.home-content .text-animate h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: .7px #ff1496;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin-top: 2rem 0 4rem;
+}
+
+.btn-box {
+    margin: 3rem 4rem 0 0;
+}
+.btn-box .btn:last-child {
+    background: transparent;
+    margin-left: 2rem;
+    color: #ff1496;
+}
+.btn-box .btn {
+    padding: 1rem 2.2rem;
+    width: 10rem;
+    height: 100%;
+    background: #ff1496;
+    border: .1rem solid #ff1496;
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: #081b29;
+}
+
+.contact {
+    position: absolute;
+    bottom: 4rem;
+    width: 17rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+
+.contact a {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    color: #ff1496;
+    border-radius: 50%;
+    border: 1px solid #ff1496;
+}
+
+.contact a:hover {
+    color: #ffffff;
+}
+
+/* home section ends */
+
+/* about section starts */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #081b29;
+    padding: 5rem 0 2rem 0;
+    border: 1px solid #ff1496;
+    margin: 0 12rem 5rem;
+}
+
+.heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+span {
+    color: #ff1496;
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: 0.2rem solid #ff1496;
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: 0.2rem solid #081b29;
+    border-bottom: 0.2rem solid #081b29;
+    border-left: 0.2rem solid #ff1496;
+    border-right: 0.2rem solid #ff1496;
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.5rem;
+}
+
+.about-content p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 10rem 3rem;
+    margin: 2rem 0 3rem;
+}
+
+/* projects section starts */
+.projects {
+    background: #0d3857;
+    padding: 2rem 3rem;
+}
+.projects h2 {
+    text-align: center;
+    font-size: 3rem;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 70rem;
+    position: relative;
+    margin: auto;
+    padding-top: 1.5rem;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-left: -0.2rem;
+    margin-top: -2.2rem;
+    color: #ff1496;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: 0.6s ease;
+    border-radius: 0 0.3rem 0.3rem 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 0.3rem 0 0 0.3rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #717171;
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    position: absolute;
+    bottom: 0.8rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.summary-details h2 {
+    margin: 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.summary-details p{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.summary-details {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem;
+    background: transparent;
+    padding: 0 10rem;
+}
+.summary-details .links {
+    margin: 1.5rem;
+}
+.summary-details a{
+    margin: 0.5rem;
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ff1496;
+    font-size: 1.5rem;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* project section ends */
+
+/* skill section starts here */
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: space-between;
+    margin: 3rem 0;
+}
+.skill-set h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 0 2rem 0;
+}
+/* skill section ends here */
+
+/* contact form starts*/
+
+.contact-form h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem 8rem;
+    text-align: center;
+}
+
+/* Style for the form container */
+.form-container {
+    margin: 2rem 15rem;
+    padding: 2rem;
+    background-color: #0d3857;
+    border-radius: 10px;
+}
+
+/* Style for the form inputs */
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ff1496;
+    outline: none;
+}
+
+/* Style for the form button */
+button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff1496;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for the arrow icon inside the button */
+.fa-sharp.fa-solid.fa-arrow-right {
+    margin-left: 0.5rem;
+}
+/* Go to top button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    z-index: 99;
+    font-size: 1.8rem;
+    border: 1px solid #ff1496;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.4rem;
+}
+
+.fa-sharp.fa-solid.fa-arrow-up {
+    color: #ffffff;
+}
+#myBtn:hover {
+    background-color: #ff1496;
+}
+
+/* contact form ends */
+
+/* footer starts here */
+
+.footer {
+    font-size: 1.5rem;
+    padding: 2rem 15rem;
+    text-align: center;
+    background: #0d3857;
+    margin-top: 2rem;
+}
+
+/* footer ends here */
