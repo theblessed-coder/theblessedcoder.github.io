@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 18rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,20 +57,20 @@ body {
 /* home section starts here */
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
 }
 
 .home {
     display: flex;
     align-items: center;
-    padding: 0rem 9%;
+    padding: 0 18rem;
     background-image: no-repeat;
 }
 
 .home-image img {
-    width: 500px;
-    border-radius: 70%;
-    margin-left: 10rem;
+    width: 400px;
+    border-radius: 80%;
+    margin-left: 5rem;
+    margin-top: 3rem;
 }
 
 .home-content {
@@ -118,6 +118,10 @@ section {
     letter-spacing: .1rem;
     color: #081b29;
 }
+.btn-box .btn:hover {
+    background: transparent;
+    color: #ff1496;
+}
 
 .contact {
     position: absolute;
@@ -135,13 +139,13 @@ section {
     display: inline-flex;
     width: 40px;
     height: 40px;
-    color: #ff1496;
+    color: #ffffff;
     border-radius: 50%;
     border: 1px solid #ff1496;
 }
 
 .contact a:hover {
-    color: #ffffff;
+    color: #ff1496;
 }
 
 /* home section ends */
@@ -154,9 +158,8 @@ section {
     flex-direction: column;
     gap: 0.5rem;
     background-color: #081b29;
-    padding: 5rem 0 2rem 0;
     border: 1px solid #ff1496;
-    margin: 0 12rem 5rem;
+    margin: 3rem 18rem 5rem;
 }
 
 .heading {
@@ -216,8 +219,7 @@ span {
 
 /* projects section starts */
 .projects {
-    background: #0d3857;
-    padding: 2rem 3rem;
+    padding: 2rem 18rem;
 }
 .projects h2 {
     text-align: center;
@@ -225,7 +227,7 @@ span {
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 70rem;
+    max-width: 100rem;
     position: relative;
     margin: auto;
     padding-top: 1.5rem;
@@ -355,19 +357,24 @@ span {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 3.5rem;
     padding: 5rem 0 5rem 2rem;
+    margin: 0 18rem;
     border: 0.2rem solid #ff1496;
     border-radius: 0.5rem;
     background: #0d3857;
 }
+.skill-set {
+    margin: 8rem 0 5rem 0;
+}
 .skill-set h2 {
     text-align: center;
     font-size: 3rem;
-    padding: 0 0 2rem 0;
 }
 /* skill section ends here */
 
 /* contact form starts*/
-
+.contact-form{
+    margin: 5rem 0 0 0;
+}
 .contact-form h2 {
     font-size: 3rem;
     margin-bottom: 1rem 8rem;
@@ -376,7 +383,7 @@ span {
 
 /* Style for the form container */
 .form-container {
-    margin: 2rem 15rem;
+    margin: 5rem 18rem 0;
     padding: 2rem;
     background-color: #0d3857;
     border-radius: 10px;
@@ -448,7 +455,6 @@ button[type="submit"] {
     padding: 2rem 15rem;
     text-align: center;
     background: #0d3857;
-    margin-top: 2rem;
 }
 
 /* footer ends here */
