@@ -565,9 +565,10 @@ button[type="submit"] {
     font-size: 2rem;
     text-align: center;
     background: #da97bc;
+    background-clip: inherit;
     margin-top: 8rem;
     padding-top: 10rem;
-
+    margin: 0;
 }
 
 /* footer ends here */
@@ -628,8 +629,8 @@ button[type="submit"] {
     }
 
     .home-content h1 {
-        font-size: 3.5rem;
-        font-weight: 600;
+        font-size: 3rem;
+        font-weight: 700;
         line-height: 2;
     }
 
@@ -639,7 +640,8 @@ button[type="submit"] {
 
     .home-content .text-animate h3 {
         font-size: 3.5rem;
-        -webkit-text-stroke: .5px #ff1496;
+        -webkit-text-stroke: .8px#ff1496;
+        font-weight: 700;
         line-height: 2;
     }
 
@@ -788,5 +790,6 @@ button[type="submit"] {
     /* footer section starts here */
     .footer {
         font-size: 2rem;
+        margin: 0;
     }
 }
