@@ -479,18 +479,18 @@ span {
 
 /* contact form starts*/
 .contact-form {
-    margin: 5rem 0 0 0;
+    margin: 0;
 }
 
 .contact-form h2 {
     font-size: 3rem;
-    margin: 10rem 0 2rem;
+    margin: 0 2rem;
     text-align: center;
 }
 
 /* Style for the form container */
 .form-container {
-    margin: 5rem 18rem 0;
+    margin: 0 18rem 0;
     padding: 2rem;
     border-radius: 10px;
 }
