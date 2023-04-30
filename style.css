@@ -21,7 +21,6 @@ body {
 /* header starts here */
 .header {
     position: fixed;
-    transition: top 0.3s;
     top: 0;
     width: 100%;
     padding: 2rem 18rem;
@@ -35,20 +34,117 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-weight: 200;
-} 
+    padding-right: 35rem;
+}
 
 .navbar a {
     font-size: 2rem;
     color: #ffffff;
     text-decoration: none;
     font-weight: 200;
-    margin-left: 3.5rem;
+    padding-right: 2rem;
+}
+
+.navbar a:last-child {
+    padding-left: 0;
 }
 
 .navbar a:hover,
 .navbar .span {
     color: #ff1496;
 }
+
+/* mobile */
+/* The sidebar menu */
+.sidebar {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #081b29;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: none;
+    transition: 0.3s;
+}
+
+.sidebar .ist {
+    color: #ff1496;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+    color: #ff1496;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #081b29;
+    padding: 10px 15px;
+    border: none;
+    display: none;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+        display: block;
+    }
+
+    .openbtn {
+        display: block;
+    }
+
+    .header {
+        display: none;
+    }
+}
+
+
+/* mobile */
 
 /* header ends here */
 
@@ -76,7 +172,7 @@ section {
 }
 
 .home-content h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 500;
 }
 
@@ -85,25 +181,27 @@ section {
 }
 
 .home-content .text-animate h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     color: transparent;
     -webkit-text-stroke: .7px #ff1496;
 }
 
 .home-content p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 2rem 0 4rem;
 }
 
 .btn-box {
     margin: 3rem 4rem 0 0;
 }
+
 .btn-box .btn:last-child {
     background: transparent;
     margin-left: 2rem;
     color: #ff1496;
 }
+
 .btn-box .btn {
     padding: 1rem 2.2rem;
     width: 10rem;
@@ -116,6 +214,7 @@ section {
     letter-spacing: .1rem;
     color: #081b29;
 }
+
 .btn-box .btn:hover {
     background: transparent;
     color: #ff1496;
@@ -219,10 +318,12 @@ span {
 .projects {
     padding: 2rem 18rem;
 }
+
 .projects h2 {
     text-align: center;
     font-size: 3rem;
 }
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 100rem;
@@ -311,7 +412,7 @@ span {
     font-size: 2rem;
 }
 
-.summary-details p{
+.summary-details p {
     font-size: 1.5rem;
     text-align: center;
 }
@@ -324,10 +425,12 @@ span {
     background: transparent;
     padding: 0 10rem;
 }
+
 .summary-details .links {
     margin: 1.5rem;
 }
-.summary-details a{
+
+.summary-details a {
     margin: 0.5rem;
     padding: 0.5rem 3rem;
     border-radius: 0.5rem;
@@ -360,19 +463,23 @@ span {
     border-radius: 0.5rem;
     background: #0d3857;
 }
+
 .skill-set {
     margin: 8rem 0 5rem 0;
 }
+
 .skill-set h2 {
     text-align: center;
     font-size: 3rem;
 }
+
 /* skill section ends here */
 
 /* contact form starts*/
-.contact-form{
+.contact-form {
     margin: 5rem 0 0 0;
 }
+
 .contact-form h2 {
     font-size: 3rem;
     margin-bottom: 1rem 8rem;
@@ -420,6 +527,7 @@ button[type="submit"] {
 .fa-sharp.fa-solid.fa-arrow-right {
     margin-left: 0.5rem;
 }
+
 /* Go to top button */
 #myBtn {
     display: none;
@@ -440,6 +548,7 @@ button[type="submit"] {
 .fa-sharp.fa-solid.fa-arrow-up {
     color: #ffffff;
 }
+
 #myBtn:hover {
     background-color: #ff1496;
 }
@@ -456,3 +565,223 @@ button[type="submit"] {
 }
 
 /* footer ends here */
+
+/* Media Query */
+
+@media only screen and (max-width: 767px) {
+    section {
+        min-height: auto;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        padding: 1rem;
+        position: static;
+    }
+
+    .logo {
+        padding: 4rem;
+    }
+
+    .navbar a {
+        padding-right: 1rem;
+        display: none;
+    }
+
+    .openbtn {
+        display: block;
+    }
+
+    .sidebar a {
+        display: block;
+    }
+
+    #main {
+        margin-left: 0;
+    }
+
+    /* home section */
+    .home {
+        padding: 3rem 2rem;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 5rem;
+    }
+
+    .home-image img {
+        margin: 3rem 0;
+        display: none;
+    }
+
+    .home-content {
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        line-height: 2;
+    }
+
+    .home-content .text-animate {
+        width: 100%;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 3.5rem;
+        -webkit-text-stroke: .5px #ff1496;
+        line-height: 2;
+    }
+
+    .home-content p {
+        font-size: 3rem;
+        margin-top: 2rem 0 3rem;
+        line-height: 1.5;
+    }
+
+    .btn-box {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-box .btn {
+        margin-top: 4rem;
+        width: auto;
+        padding: 1rem 2rem;
+        font-size: 2.5rem;
+    }
+
+    .contact {
+        width: 100%;
+        position: static;
+        margin: 4rem 2rem;
+    }
+
+    /* about section */
+    .about {
+        margin: 3rem 5rem;
+        padding: 1rem 2rem 0;
+    }
+
+    .about-img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .about-img img {
+        width: 85%;
+    }
+    .about-content h3 {
+        font-size: 3rem;
+    }
+    .about-content p {
+        padding: 0 1rem 3rem;
+        font-size: 2.3rem;
+    }
+
+    /* project section */
+    .projects {
+        padding: 2rem;
+        margin: 2rem 3rem;
+    }
+
+    .projects h2 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+        padding-top: 0.5rem;
+    }
+
+    .prev,
+    .next {
+        margin-top: -1.2rem;
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 1rem;
+        padding: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+    .summary-details h2 {
+        font-size: 3rem;
+    }
+
+    .summary-details p {
+        font-size: 2.8rem;
+        margin: 4rem 4rem;
+    }
+
+    .summary-details {
+        padding: 0 1rem;
+    }
+
+    .summary-details a {
+        font-size: 3rem;
+        padding: 0.5rem 1.5rem;
+    }
+
+    /* skills section */
+    .skills {
+        display: block;
+        padding: 3rem;
+        margin: 2rem 5rem;
+    }
+
+    .skills>* {
+        margin-bottom: 3rem;
+    }
+
+    .skill-set {
+        margin: 5rem 0 3rem;
+    }
+
+    .skill-set h2 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* contact section */
+    .contact-form {
+        margin: 4.5rem 3.5rem;
+    }
+        input::placeholder {
+            font-size: 3rem;
+        }
+        textarea::placeholder {
+            font-size: 3rem;
+        }
+
+    .contact-form h2 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-container {
+        margin: 2rem;
+    }
+
+    button[type="submit"] {
+        font-size: 2.5rem;
+    }
+
+    #myBtn {
+        font-size: 3rem;
+    }
+
+    /* footer section starts here */
+    .footer {
+        padding: 2rem 5rem;
+        font-size: 2rem;
+    }
+}
