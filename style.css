@@ -256,8 +256,11 @@ section {
     margin: 3rem 18rem 5rem;
     border-top: 2px solid #ff1496;
     border-bottom: 2px solid #ff1496;;
+    padding: 0 0 2rem;
 }
-
+ .about h2 {
+    margin-top: 6rem;
+ }
 .heading {
     font-size: 4rem;
     margin-bottom: 2rem;
@@ -304,13 +307,12 @@ span {
 
 .about-content h3 {
     font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .about-content p {
     text-align: center;
     font-size: 1.5rem;
-    padding: 0 10rem 3rem;
-    margin: 2rem 0 3rem;
 }
 
 /* projects section starts */
@@ -459,21 +461,18 @@ span {
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5rem;
     grid-gap: 4rem;
-    padding: 10rem 0 10rem 2rem;
     margin: 0 18rem;
     border-top: 2px solid #ff1496;
     border-bottom: 2px solid #ff1496;
-}
-
-.skill-set {
-    margin: 8rem 0 5rem 0;
 }
 
 .skill-set h2 {
     display: block;
     text-align: center;
     font-size: 3rem;
+    margin: 5rem 0  0;
 }
 
 /* skill section ends here */
@@ -485,7 +484,7 @@ span {
 
 .contact-form h2 {
     font-size: 3rem;
-    margin-bottom: 1rem 8rem;
+    margin: 10rem 0 2rem;
     text-align: center;
 }
 
@@ -536,7 +535,6 @@ button[type="submit"] {
     position: fixed;
     bottom: 2rem;
     right: 3rem;
-    z-index: 99;
     font-size: 1.8rem;
     border: 2px solid #ff1496;
     outline: none;
@@ -564,8 +562,7 @@ button[type="submit"] {
     text-align: center;
     background: #da97bc;
     background-clip: inherit;
-    margin-top: 8rem;
-    padding-top: 10rem;
+    padding: 8rem 0 2rem 0;
     margin: 0;
 }
 
@@ -671,14 +668,16 @@ button[type="submit"] {
     /* about section */
     .about {
         margin: 3rem 2.8rem;
-        padding: 1rem 1rem 0;
+        padding: 1rem 1rem 2rem;
     }
 
     .about-img {
         width: 15rem;
         height: 15rem;
     }
-
+.about h2 {
+    margin-top: 0;
+}
     .about-img img {
         width: 85%;
     }
@@ -738,9 +737,11 @@ button[type="submit"] {
 
     /* skills section */
     .skills {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         padding: 3rem;
-        margin: 2rem 3rem;
+        margin: 2rem 2rem;
     }
 
     .skills>* {
