@@ -15,7 +15,7 @@ html {
 
 body {
     color: #000000;
-    background-color: #ffffff
+    background-color: #ffffff;
 }
 
 /* header starts here */
@@ -23,7 +23,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 2rem 18rem;
+    padding: 2rem 0 0 10rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,110 +54,16 @@ body {
     color: #ff1496;
 }
 
-/* mobile */
-/* The sidebar menu */
-.sidebar {
-    height: 100%;
-    /* 100% Full-height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #ffffff;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidebar */
-}
-
-/* The sidebar links */
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000000;
-    display: none;
-    transition: 0.3s;
-}
-
-.sidebar .ist {
-    color: #ff1496;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidebar a:hover {
-    color: #ff1496;
-}
-
-/* Position and style the close button (top right corner) */
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* The button used to open the sidebar */
-.openbtn {
-    font-size: 30px;
-    cursor: pointer;
-    color: #081b29;
-    background-color: #ffffff;
-    padding: 10px 15px;
-    border: none;
-    display: none;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    /* If you want a transition effect */
-    padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
-
-    .sidebar a {
-        font-size: 18px;
-        display: block;
-    }
-
-    .openbtn {
-        display: block;
-    }
-
-    .header {
-        display: none;
-    }
-}
-
-
-/* mobile */
-
 /* header ends here */
 
 /* home section starts here */
-section {
-    min-height: 100vh;
-}
 
 .home {
     display: flex;
     align-items: center;
     padding: 0 18rem;
     background-image: no-repeat;
+    min-height: 100vh;
 }
 
 .home-image img {
@@ -480,17 +386,18 @@ span {
 /* contact form starts*/
 .contact-form {
     margin: 0;
+    min-height: 80vh;
 }
 
 .contact-form h2 {
     font-size: 3rem;
-    margin: 0 2rem;
+    margin: 15rem 0 2rem;
     text-align: center;
 }
 
 /* Style for the form container */
 .form-container {
-    margin: 0 18rem 0;
+    margin: 2rem 18rem 5rem;
     padding: 2rem;
     border-radius: 10px;
 }
