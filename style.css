@@ -20,8 +20,6 @@ body {
 
 /* header starts here */
 .header {
-    position: fixed;
-    top: 0;
     width: 100%;
     padding: 2rem 0 0 10rem;
     display: flex;
@@ -61,29 +59,12 @@ body {
 .home {
     display: flex;
     align-items: center;
-    padding: 0 18rem;
-    background-image: no-repeat;
-    min-height: 100vh;
-}
-
-.home-image img {
-    width: 400px;
-    border-radius: 80%;
-    margin-left: 5rem;
-    margin-top: 3rem;
-}
-
-.home-content {
-    max-width: 60rem;
+    padding: 10rem;
 }
 
 .home-content h1 {
     font-size: 4rem;
     font-weight: 500;
-}
-
-.home-content .text-animate {
-    width: 32.8rem;
 }
 
 .home-content .text-animate h3 {
