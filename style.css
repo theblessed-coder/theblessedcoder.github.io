@@ -1,32 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 :root {
-    /* color Variable */
-}
+    /* color Variables */
+    --gradient-colors: linear-gradient(90deg, #e70faa, #00c0fd);
+    --primary-color: #000000;
+    --primary-color2: #ffffff;
+    --secondary-color: #e70faa;
+    --secondary-color2: #00c0fd;
+
+    /* Font family variables */
+    --font-family-base: 'Nunito', sans-serif;
+
+    /* Font size variables */
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+
+    /* Font weight variables */
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+    /* Line height variables */
+     --line-height-small: 1.2;
+     --line-height-base: 1.5;
+     --line-height-big: 1.8;
+} 
 
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--font-family-base);
     box-sizing: border-box;
-    scroll-behavior: smooth;
     text-decoration: none;
 }
 
 html {
+    scroll-behavior: smooth;
     font-size: 62.5%;
 }
 
 body {
     transition: background-color 0.5s, color 0.5s;
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--primary-color);
+    background-color: var(--primary-color2);
 }
 
 /* Dark mode styles starts here */
 body.dark-mode {
-    background-color: #000000 !important;
-    color: #ffffff !important;
+    background-color: var(--primary-color) !important;
+    color: var(--primary-color2) !important;
 }
 
 .toggle-container {
