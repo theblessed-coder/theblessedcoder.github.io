@@ -101,3 +101,11 @@ function closeNav() {
     // Add event listener for the toggle container
     document.querySelector('.toggle-container').addEventListener('click', toggleDarkMode);
 
+    //Hamburger menu
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}

@@ -7,6 +7,7 @@
     --primary-color2: #ffffff;
     --secondary-color: #e70faa;
     --secondary-color2: #00c0fd;
+    --secondary-color3: #bababa;
 
     /* Font family variables */
     --font-family-base: 'Nunito', sans-serif;
@@ -110,6 +111,61 @@ body.dark-mode header .logo {
 .navbar a:hover,
 .navbar .span {
     color: var(--secondary-color);
+}
+
+/* Mobile Header */
+span {
+    display: none;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: var(--primary-color);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.overlay a {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay-content .home {
+    color: #37a337;
+}
+
+.overlay-content .contact-us {
+    background-color: #37a337;
+    border-radius: 0.5rem;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 /* header ends here */
 
@@ -289,7 +345,7 @@ body.dark-mode .about-img .circle-spin {
 
 /* projects section starts */
 .projects {
-    padding: 2rem 18rem;
+    padding: 0 18rem;
 }
 
 .projects h2 {
@@ -318,9 +374,9 @@ body.dark-mode .about-img .circle-spin {
     width: auto;
     margin-left: -0.2rem;
     margin-top: -2.2rem;
-    color: #ff1496;
-    font-weight: bold;
-    font-size: 3rem;
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xx-large);
     transition: 0.6s ease;
     border-radius: 0 0.3rem 0.3rem 0;
     user-select: none;
@@ -328,20 +384,18 @@ body.dark-mode .about-img .circle-spin {
 
 /* Position the "next button" to the right */
 .next {
-    right: 0;
+    right: -10rem;
     border-radius: 0.3rem 0 0 0.3rem;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: #717171;
+.prev {
+    left: -10rem;
 }
 
 /* Caption text */
 .text {
-    color: #f2f2f2;
-    font-size: 1.5rem;
+    color: var(--primary-color2);
+    font-size: var(--font-size-medium);
     padding: 0.8rem 1.2rem;
     position: absolute;
     bottom: 0.8rem;
@@ -355,7 +409,7 @@ body.dark-mode .about-img .circle-spin {
     height: 1.5rem;
     width: 1.5rem;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: var(--secondary-color3);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -363,7 +417,7 @@ body.dark-mode .about-img .circle-spin {
 
 .active,
 .dot:hover {
-    background-color: #717171;
+    background-color: var(--secondary-color2);
 }
 
 /* Fading animation */
@@ -383,13 +437,13 @@ body.dark-mode .about-img .circle-spin {
 }
 
 .summary-details h2 {
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     text-align: center;
-    font-size: 2rem;
+    font-size: var(--font-size-x-large);
 }
 
 .summary-details p {
-    font-size: 1.5rem;
+    font-size: var(--font-size-medium);
     text-align: center;
 }
 
@@ -399,11 +453,10 @@ body.dark-mode .about-img .circle-spin {
     flex-direction: column;
     border-radius: 1rem;
     background: transparent;
-    padding: 0 10rem;
 }
 
 .summary-details .links {
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 .summary-details a {
@@ -411,25 +464,18 @@ body.dark-mode .about-img .circle-spin {
     padding: 0.5rem 3rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    color: #000000;
-    border: 2px solid #ff1496;
-    font-size: 1.5rem;
+    color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    font-size: var(--font-size-medium);
+}
+
+body.dark-mode .summary-details a {
+    color: var(--primary-color2);
 }
 
 .summary-details a:hover {
-    background-color: #da97bc;
+    background: var(--gradient-colors);
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
-
 /* project section ends */
 
 /* skill section starts here */
@@ -439,7 +485,9 @@ body.dark-mode .about-img .circle-spin {
     padding: 5rem;
     grid-gap: 4rem;
     margin: 0 10rem;
-    border-bottom: 2px solid #ff1496;
+    border-bottom: 2px solid;
+    border-image: var(--gradient-colors);
+    border-image-slice: 1;
 }
 
 .skill-set h2 {
@@ -451,24 +499,21 @@ body.dark-mode .about-img .circle-spin {
     -webkit-background-clip: text;
     background-image: var(--gradient-colors);
 }
-
 /* skill section ends here */
 
 /* contact form starts*/
-.contact-form {
-    margin: 0;
-    min-height: 80vh;
-}
-
 .contact-form h2 {
-    font-size: 3rem;
-    margin: 15rem 0 2rem;
+    font-size: var(--font-size-xx-large);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: var(--gradient-colors);
+    margin: 5rem 0 2rem;
     text-align: center;
 }
 
 /* Style for the form container */
 .form-container {
-    margin: 2rem 18rem 5rem;
+    margin: 2rem 18rem 2rem;
     padding: 2rem;
     border-radius: 10px;
 }
@@ -481,11 +526,17 @@ textarea {
     width: 100%;
     margin-bottom: 2rem;
     padding: 2rem;
-    font-size: 1.5rem;
+    font-size: var(--font-size-medium);
     border: none;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px #ff1496;
+    box-shadow: 0px 0px 5px var(--secondary-color);
     outline: none;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode textarea {
+    background: var(--primary-color);
 }
 
 /* Style for the form button */
@@ -493,12 +544,10 @@ button[type="submit"] {
     display: block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #fff;
-    background: linear-gradient(90deg,
-        #e70faa,
-        #00c0fd);
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
+    color: var(--primary-color2);
+    background: var(--gradient-colors);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -513,103 +562,76 @@ button[type="submit"] {
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 2rem;
-    right: 3rem;
-    font-size: 1.8rem;
-    border: 2px solid #ff1496;
+    bottom: 0.5rem;
+    right: 2rem;
+    font-size: var(--font-size-large);
+    border: 2px solid var(--secondary-color2);
     outline: none;
     background-color: transparent;
-    color: white;
+    color: var(--primary-color2);
     cursor: pointer;
     padding: 1rem;
     border-radius: 0.4rem;
 }
 
 .fa-sharp.fa-solid.fa-arrow-up {
-    color: #000000;
+    color: var(--primary-color);
+}
+
+body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
+    color: var(--primary-color2);
 }
 
 #myBtn:hover {
-    background-color: #ff1496;
+    background: var(--gradient-colors);
 }
-
 /* contact form ends */
 
 /* footer starts here */
 
 .footer {
-    font-size: 2rem;
+    font-size: var(--font-size-large);
+    font-weight: var(--font-weight-bold);
     text-align: center;
     border-top: 2px solid;
-    border-image: linear-gradient(90deg, #e70faa, #00c0fd);
+    border-image: var(--gradient-colors);
     border-image-slice: 1;
-    padding: 4rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
     margin: 0;
 }
-
 /* footer ends here */
 
 /* Media Query */
 
-@media only screen and (max-width: 767px) {
-    section {
-        min-height: auto;
-    }
-
-    html {
-        font-size: 50%;
-    }
-
-    .header {
-        padding: 1rem;
-        position: static;
-    }
-
-    .logo {
-        padding: 0 2rem;
-        font-size: 3rem;
-        font-weight: bold;
-    }
-
-    .navbar a {
-        padding-right: 1rem;
+@media (max-width: 768px) {
+    /* Header Section */
+    .navbar {
         display: none;
     }
 
-    .openbtn {
+    span {
         display: block;
     }
 
-    .sidebar a {
-        display: block;
+    .header {
+        padding: 2rem;
     }
 
-    #main {
-        margin-left: 0;
-        padding-right: 0;
+    .logo {
+        font-size: var(--font-size-large);
     }
 
     /* home section */
     .home {
-        padding: 1rem;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 2rem;
-    }
-
-    .home-image img {
-        margin: 3rem 0;
-        display: none;
+        padding: 2rem;
     }
 
     .home-content {
         margin-top: 3rem;
-        text-align: center;
     }
 
-    .home-content h1 {
-        font-size: 4rem;
-        font-weight: 700;
+    .home-content h3 {
+        font-size: var(--font-size-large);
     }
 
     .home-content .text-animate {
@@ -771,5 +793,15 @@ button[type="submit"] {
         font-size: 2.5rem;
         margin: 0;
         padding-bottom: 2rem;
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
     }
 }
