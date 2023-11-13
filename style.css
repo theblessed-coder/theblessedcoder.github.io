@@ -221,21 +221,26 @@ body.dark-mode .contact a {
     align-items: center;
     flex-direction: column;
     gap: 0.5rem;
-    margin: 3rem 10rem;
-    border-bottom: 2px solid #ff1496;
+    margin: 2rem 10rem;
+    border-bottom: 2px solid;
+    border-image: var(--gradient-colors);
+    border-image-slice: 1;
     padding: 0 0 2rem;
 }
  .about h2 {
-    margin-top: 2rem;
+    margin-top: 1rem;
  }
 .heading {
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    font-size: var(--font-size-xx-large);
+    margin-bottom: 0.2rem;
     text-align: center;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: var(--gradient-colors);
 }
 
 span {
-    color: #ff1496;
+    color: var(--secondary-color2);
 }
 
 .about-img {
@@ -250,8 +255,8 @@ span {
 
 .about-img img {
     width: 90%;
+    border: 2px solid var(--secondary-color);
     border-radius: 50%;
-    border: 0.2rem solid #ff1496;
 }
 
 .about-img .circle-spin {
@@ -262,24 +267,24 @@ span {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: 0.2rem solid #ffffff;
-    border-bottom: 0.2rem solid #ffffff;
-    border-left: 0.2rem solid #ff1496;
-    border-right: 0.2rem solid #ff1496;
+    border-top: 0.2rem solid var(--primary-color2);
+    border-bottom: 0.2rem solid var(--primary-color2);
+    border-left: 0.2rem solid var(--secondary-color);
+    border-right: 0.2rem solid var(--secondary-color);
+}
+
+body.dark-mode .about-img .circle-spin {
+    border-top: 0.2rem solid var(--primary-color);
+    border-bottom: 0.2rem solid var(--primary-color);
 }
 
 .about-content {
     text-align: center;
 }
 
-.about-content h3 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-}
-
 .about-content p {
     text-align: center;
-    font-size: 2rem;
+    font-size: var(--font-size-large);
 }
 
 /* projects section starts */
@@ -289,12 +294,15 @@ span {
 
 .projects h2 {
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--font-size-xx-large);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: var(--gradient-colors);
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 100rem;
+    max-width: 80%;
     position: relative;
     margin: auto;
     padding-top: 1.5rem;
@@ -437,8 +445,11 @@ span {
 .skill-set h2 {
     display: block;
     text-align: center;
-    font-size: 3rem;
+    font-size: var(--font-size-xx-large);
     margin: 5rem 0  0;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: var(--gradient-colors);
 }
 
 /* skill section ends here */
