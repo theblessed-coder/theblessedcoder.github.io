@@ -61,3 +61,43 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
+
+
+/* DarkMode */
+    const body = document.body;
+    const darkModeIcon = document.getElementById('dark-mode-icon');
+    const lightModeIcon = document.getElementById('light-mode-icon');
+
+    // Check user's preference from local storage
+    if (localStorage.getItem('dark-mode') === 'enabled') {
+        enableDarkMode();
+    }
+
+    // Toggle between dark and light mode
+    function toggleDarkMode() {
+        if (body.classList.contains('dark-mode')) {
+            enableLightMode();
+        } else {
+            enableDarkMode();
+        }
+    }
+
+    // Enable dark mode
+    function enableDarkMode() {
+        body.classList.add('dark-mode');
+        localStorage.setItem('dark-mode', 'enabled');
+        darkModeIcon.style.display = 'none';
+        lightModeIcon.style.display = 'inline-block';
+    }
+
+    // Enable light mode
+    function enableLightMode() {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('dark-mode', null);
+        darkModeIcon.style.display = 'inline-block';
+        lightModeIcon.style.display = 'none';
+    }
+
+    // Add event listener for the toggle container
+    document.querySelector('.toggle-container').addEventListener('click', toggleDarkMode);
+
