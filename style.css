@@ -56,10 +56,10 @@ body.dark-mode {
 
 .toggle-container {
     position: fixed;
-    top: 70px;
-    right: 20px;
+    top: 25px;
+    right: 10px;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
 }
@@ -90,7 +90,7 @@ body.dark-mode {
     font-size: var(--font-size-x-large);
     color: var(--primary-color);
     font-weight: var(--font-weight-bold);
-    padding-right: 35rem;
+    padding-right: 30rem;
 }
 
 body.dark-mode header .logo {
@@ -100,7 +100,7 @@ body.dark-mode header .logo {
 .navbar a {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
-    padding-right: 2rem;
+    padding-right: 5rem;
     color: var(--secondary-color2);
 }
 
@@ -114,7 +114,7 @@ body.dark-mode header .logo {
 }
 
 /* Mobile Header */
-span {
+.openbtn {
     display: none;
 }
 
@@ -286,6 +286,7 @@ body.dark-mode .contact a {
  .about h2 {
     margin-top: 1rem;
  }
+
 .heading {
     font-size: var(--font-size-xx-large);
     margin-bottom: 0.2rem;
@@ -480,8 +481,8 @@ body.dark-mode .summary-details a {
 
 /* skill section starts here */
 .skills {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    
     padding: 5rem;
     grid-gap: 4rem;
     margin: 0 10rem;
@@ -601,207 +602,147 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 }
 /* footer ends here */
 
-/* Media Query */
-
-@media (max-width: 768px) {
-    /* Header Section */
-    .navbar {
-        display: none;
+/* Mobile Media Query */
+@media only screen and (max-width: 768px) {
+    :root {
+        /* Update font sizes for smaller screens */
+        --font-size-small: 1.2rem;
+        --font-size-medium: 1.4rem;
+        --font-size-large: 1.6rem;
+        --font-size-x-large: 2rem;
+        --font-size-xx-large: 3rem;
     }
 
-    span {
-        display: block;
+    body {
+        padding-top: 5rem;
+        /* Add padding to the top of the body */
     }
 
     .header {
-        padding: 2rem;
+        padding: 1rem;
+        /* Adjust header padding for smaller screens */
     }
 
     .logo {
-        font-size: var(--font-size-large);
+        padding-right: 1rem;
+        /* Reduce right padding for the logo */
     }
 
-    /* home section */
+    .navbar {
+        display: none;
+        /* Hide the navbar by default */
+    }
+
+    .openbtn {
+        display: block;
+        /* Display the hamburger menu icon */
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 1rem;
+        font-size: 2rem;
+        z-index: 99;
+    }
+
+    .overlay {
+        height: 100%;
+        /* Show the overlay menu */
+    }
+
+    .overlay-content {
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .overlay a {
+        font-size: 1.8rem;
+        /* Adjust font size for menu links */
+        padding: 1rem;
+    }
+
+    /* Update styles for home section */
     .home {
-        padding: 2rem;
-    }
-
-    .home-content {
-        margin-top: 3rem;
+        padding: 5rem;
     }
 
     .home-content h3 {
         font-size: var(--font-size-large);
     }
 
-    .home-content .text-animate {
-        width: 100%;
+    .home-content h1 {
+        font-size: var(--font-size-x-large);
     }
 
-    .home-content .text-animate h3 {
-        font-size: 2.8rem;
-        -webkit-text-stroke: .8px#ff1496;
-
+    .home-content .text-gradient {
+        font-size: var(--font-size-x-large);
     }
 
     .home-content p {
-        font-size: 2.5rem;
-        margin: 1rem 0 3rem;
-    }
-
-    .btn-box {
-        margin: 8rem 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: var(--font-size-large);
+        margin-top: 2rem;
     }
 
     .btn-box .btn {
+        padding: 1rem 1.5rem;
+        margin-right: 1rem;
         width: auto;
-        padding: 1rem 2rem;
-        font-size: 2.5rem;
+        font-size: var(--font-size-medium);
     }
 
-    .contact {
-        width: 100%;
-        position: static;
-        margin: 0;
+    .contact a {
+        width: 30px;
+        height: 30px;
+        font-size: var(--font-size-small);
     }
 
-    /* about section */
-    .about {
-        margin: 3rem 2.8rem;
-        padding: 1rem 1rem 2rem;
-    }
-
-    .about-img {
-        width: 15rem;
-        height: 15rem;
-    }
-.about h2 {
-    margin-top: 0;
-}
-    .about-img img {
-        width: 85%;
-    }
-    .about-content h3 {
-        font-size: 3rem;
-    }
-    .about-content p {
-        padding: 0;
-        font-size: 2.5rem;
-    }
-
-    /* project section */
-    .projects {
-        padding: 2rem;
-        margin: 2rem 2rem;
-    }
-
-    .projects h2 {
-        font-size: 3.5rem;
-        margin-bottom: 2rem;
-    }
-
-    .slideshow-container {
-        max-width: 100%;
-        padding-top: 0.5rem;
-    }
-
-    .prev,
-    .next {
-        margin-top: -1.2rem;
-        font-size: 2rem;
-    }
-
-    .text {
-        font-size: 1rem;
-        padding: 0.5rem;
-        bottom: 0.5rem;
-    }
-
-    .summary-details h2 {
-        font-size: 3rem;
-    }
-
-    .summary-details p {
-        font-size: 2.5rem;
-        margin: 3rem 3rem;
-    }
-
-    .summary-details {
-        padding: 0 1rem;
-    }
-
-    .summary-details a {
-        font-size: 3rem;
-        padding: 0.5rem;
-    }
-
-    /* skills section */
+    /* Skills */
     .skills {
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        padding: 3rem;
-        margin: 2rem;
+        padding: 2rem;
+        margin: 0 2rem;
     }
 
-    .skills {
-        margin-bottom: 3rem;
-    }
-
-    .skill-set {
-        margin: 5rem 0 3rem;
-    }
-
-    .skill-set h2 {
-        font-size: 3.5rem;
-        margin-bottom: 2rem;
-    }
-
-    /* contact section */
-    .contact-form {
-        margin: 4.5rem 0.5rem;
-    }
-        input::placeholder {
-            font-size: 3rem;
-        }
-        textarea::placeholder {
-            font-size: 3rem;
-        }
-
+    /* Contact form */
     .contact-form h2 {
-        font-size: 3.5rem;
-        margin-bottom: 1rem;
+        margin: 3rem 0 1rem;
     }
 
     .form-container {
-        margin: 2rem;
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 1.5rem;
+        font-size: var(--font-size-medium);
+        margin-bottom: 1.5rem;
     }
 
     button[type="submit"] {
-        font-size: 2.5rem;
+        padding: 0.8rem 1.5rem;
+        font-size: var(--font-size-medium);
+        margin-top: 1.5rem;
     }
 
-    #myBtn {
-        font-size: 3rem;
-    }
+    /* Go to top button */
+         #myBtn {
+             display: block;
+             right: 1rem;
+             font-size: var(--font-size-medium);
+             padding: 0.8rem;
+             bottom: 0.5rem;
+         }
 
-    /* footer section starts here */
+    /* Footer */
     .footer {
-        font-size: 2.5rem;
+        font-size: var(--font-size-medium);
+        font-weight: var(--font-weight-regular);
+        text-align: center;
+        padding: 1.5rem 0;
         margin: 0;
-        padding-bottom: 2rem;
-    }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
     }
 }
