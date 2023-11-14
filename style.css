@@ -119,10 +119,10 @@ body.dark-mode header .logo {
 }
 
 .overlay {
-    height: 0%;
+    height: 0;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     top: 0;
     left: 0;
     background: var(--primary-color);
@@ -135,7 +135,7 @@ body.dark-mode header .logo {
     top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
 }
 
 .overlay a {
@@ -154,9 +154,10 @@ body.dark-mode header .logo {
 
 .overlay .closebtn {
     position: absolute;
-    top: -10px;
-    right: 45px;
-    font-size: 45px;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: var(--font-size-xx-large);
+    font-weight: var(--font-weight-bold);
 }
 /* header ends here */
 
@@ -617,29 +618,19 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 
     .openbtn {
         display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 1rem;
-        font-size: 2rem;
-        z-index: 99;
     }
 
     .overlay {
         height: 100%;
-        /* Show the overlay menu */
     }
 
     .overlay-content {
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
-        margin-top: 0;
+        margin-top: 7rem;
     }
 
     .toggle-container {
-        top: 50px;
-        right: 0.5rem;
+        top: 60px;
+        right: 1rem;
         font-size: 25px;
     }
 
@@ -720,11 +711,11 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     }
 
     .next {
-        right: -2px;
+        right: -1px;
     }
 
     .prev {
-        left: -2px;
+        left: -1px;
     }
 
     .next,

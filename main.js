@@ -50,19 +50,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-}
-
-
 /* DarkMode */
     const body = document.body;
     const darkModeIcon = document.getElementById('dark-mode-icon');
@@ -101,7 +88,7 @@ function closeNav() {
     // Add event listener for the toggle container
     document.querySelector('.toggle-container').addEventListener('click', toggleDarkMode);
 
-    //Hamburger menu
+//Mobile NavBar
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
