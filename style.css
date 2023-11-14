@@ -239,7 +239,7 @@ body.dark-mode .btn-box .btn:last-child {
 
 .contact {
     position: absolute;
-    bottom: 1rem;
+    bottom: 1px;
     width: 17rem;
     display: flex;
     justify-content: space-between;
@@ -605,7 +605,6 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 /* Mobile Media Query */
 @media only screen and (max-width: 768px) {
     :root {
-        /* Update font sizes for smaller screens */
         --font-size-small: 1.2rem;
         --font-size-medium: 1.4rem;
         --font-size-large: 1.6rem;
@@ -613,24 +612,16 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
         --font-size-xx-large: 3rem;
     }
 
-    body {
-        padding-top: 5rem;
-        /* Add padding to the top of the body */
-    }
-
     .header {
-        padding: 1rem;
-        /* Adjust header padding for smaller screens */
+        padding: 1.5rem;
     }
 
     .logo {
         padding-right: 1rem;
-        /* Reduce right padding for the logo */
     }
 
     .navbar {
         display: none;
-        /* Hide the navbar by default */
     }
 
     .openbtn {
@@ -662,9 +653,13 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
         padding: 1rem;
     }
 
+    .toggle-container {
+        top: 50px;
+    }
+
     /* Update styles for home section */
     .home {
-        padding: 5rem;
+        padding: 2rem;
     }
 
     .home-content h3 {
@@ -672,15 +667,15 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     }
 
     .home-content h1 {
-        font-size: var(--font-size-x-large);
+        font-size: var(--font-size-xx-large);
     }
 
     .home-content .text-gradient {
-        font-size: var(--font-size-x-large);
+        font-size: var(--font-size-xx-large);
     }
 
     .home-content p {
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-x-large);
         margin-top: 2rem;
     }
 
@@ -688,14 +683,69 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
         padding: 1rem 1.5rem;
         margin-right: 1rem;
         width: auto;
-        font-size: var(--font-size-medium);
+        font-size: var(--font-size-large);
     }
 
-    .contact a {
-        width: 30px;
-        height: 30px;
-        font-size: var(--font-size-small);
+    .contact {
+        bottom: 100px;
     }
+    .contact a {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* About */
+    .about {
+        margin: 8rem 2rem 5rem 2rem;
+    }
+
+    .about-img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .about-img img {
+        width: 70%;
+    }
+
+    .about-content p {
+        font-size: var(--font-size-x-large);
+    }
+
+    /* Projects */
+    .projects {
+        padding: 0 2rem;
+    }
+
+    .projects h2 {
+        font-size: var(--font-size-xx-large);
+    }
+    
+    .summary-details h2 {
+        font-size: var(--font-size-x-large);
+    }
+
+    .summary-details p {
+        font-size: var(--font-size-x-large);
+    }
+
+    .slideshow-container {
+        max-width: 100%;
+    }
+
+    .next {
+        right: -2px;
+    }
+
+    .prev {
+        left: -2px;
+    }
+
+    .next,
+    .prev {
+        top: 60%;
+    }
+
 
     /* Skills */
     .skills {
