@@ -673,7 +673,7 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     }
 
     .contact {
-        bottom: 60px;
+        bottom: 70px;
     }
     .contact a {
         width: 35px;
@@ -682,7 +682,7 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 
     /* About */
     .about {
-        margin: 5rem 2rem 5rem 2rem;
+        margin: 2rem;
     }
 
     .about-img {
