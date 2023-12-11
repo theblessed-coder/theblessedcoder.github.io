@@ -702,12 +702,13 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 
     .about-contact {
         display: block;
+        padding: 2rem;
         justify-content: space-between;
-        width: 20rem;
     }
 
     .about-contact a {
         justify-content: center;
+        display: inline-block;
         width: 50px;
         height: 50px;
         color: var(--primary-color);
