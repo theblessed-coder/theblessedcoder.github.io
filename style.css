@@ -654,6 +654,7 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 
     .home-content h3 {
         font-size: var(--font-size-x-large);
+        padding-bottom: 1rem ;
     }
 
     .home-content h1 {
@@ -667,6 +668,7 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     .home-content p {
         font-size: var(--font-size-x-large);
         margin: 1rem 0 0;
+        line-height: var(--line-height-big);
     }
 
     .btn-box .btn {
@@ -677,7 +679,7 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     }
 
     .contact {
-        bottom: 60px;
+        bottom: 30px;
         margin-right: 0;
     }
 
@@ -721,6 +723,11 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
         font-size: var(--font-size-x-large);
     }
 
+    .summary-details .links {
+        display: flex;
+        flex-direction: column;
+    }
+
     .slideshow-container {
         max-width: 100%;
     }
@@ -737,7 +744,6 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     .prev {
         top: 60%;
     }
-
 
     /* Skills */
     .skills {
