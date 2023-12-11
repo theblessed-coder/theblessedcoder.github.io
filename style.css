@@ -173,7 +173,7 @@ body.dark-mode .overlay{
 .home {
     display: flex;
     align-items: center;
-    padding: 10rem;
+    padding: 8rem 10rem;
 }
 
 .home-content h3 {
@@ -195,7 +195,7 @@ body.dark-mode .overlay{
 
 .home-content p {
     font-size: var(--font-size-x-large);
-    margin-top: 2rem 0 4rem;
+    margin: 1rem 0 2rem;
 }
 
 .btn-box {
@@ -239,7 +239,7 @@ body.dark-mode .btn-box .btn:last-child {
 
 .contact {
     position: absolute;
-    bottom: 1px;
+    bottom: 15px;
     width: 17rem;
     display: flex;
     justify-content: space-between;
@@ -278,9 +278,6 @@ body.dark-mode .contact a {
     flex-direction: column;
     gap: 0.5rem;
     margin: 2rem 10rem;
-    border-bottom: 2px solid;
-    border-image: var(--gradient-colors);
-    border-image-slice: 1;
     padding: 0 0 2rem;
 }
  .about h2 {
@@ -481,14 +478,7 @@ body.dark-mode .summary-details a {
 
 /* skill section starts here */
 .skills {
-    display: flex;
-    
-    padding: 5rem;
-    grid-gap: 4rem;
-    margin: 0 10rem;
-    border-bottom: 2px solid;
-    border-image: var(--gradient-colors);
-    border-image-slice: 1;
+    padding: 0 10rem 5rem;
 }
 
 .skill-set h2 {
@@ -500,6 +490,28 @@ body.dark-mode .summary-details a {
     -webkit-background-clip: text;
     background-image: var(--gradient-colors);
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.single {
+    padding: 8px;
+    text-align: center;
+    font-size: var(--font-size-medium);
+    border-radius: 5rem;
+    width: 100px;
+}
+
+.single img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* skill section ends here */
 
 /* contact form starts*/
@@ -538,6 +550,7 @@ body.dark-mode input[type="text"],
 body.dark-mode input[type="email"],
 body.dark-mode textarea {
     background: var(--primary-color);
+    color: var(--primary-color2)
 }
 
 /* Style for the form button */
@@ -636,11 +649,11 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 
     /* Update styles for home section */
     .home {
-        padding: 8rem 2rem;
+        padding: 5rem 2rem;
     }
 
     .home-content h3 {
-        font-size: var(--font-size-x-large);
+        font-size: var(--font-size-large);
     }
 
     .home-content h1 {
@@ -653,7 +666,7 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 
     .home-content p {
         font-size: var(--font-size-x-large);
-        margin-top: 2rem;
+        margin: 1rem 0 0;
     }
 
     .btn-box .btn {
@@ -664,7 +677,7 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     }
 
     .contact {
-        bottom: 90px;
+        bottom: -60px;
     }
     .contact a {
         width: 35px;
@@ -726,9 +739,7 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 
     /* Skills */
     .skills {
-        flex-wrap: wrap;
         padding: 2rem;
-        margin: 0 2rem;
     }
 
     /* Contact form */
