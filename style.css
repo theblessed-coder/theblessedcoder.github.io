@@ -262,11 +262,7 @@ body.dark-mode .contact a {
     color: var(--primary-color2);
 }
 
-.contact a:hover {
-    border: 2px solid;
-    border-image: var(--gradient-colors);
-    border-image-slice: 1;
-}
+
 
 /* home section ends */
 
@@ -339,6 +335,10 @@ body.dark-mode .about-img .circle-spin {
 .about-content p {
     text-align: center;
     font-size: var(--font-size-large);
+}
+
+.about-contact {
+    display: none;
 }
 
 /* projects section starts */
@@ -504,7 +504,7 @@ body.dark-mode .summary-details a {
     text-align: center;
     font-size: var(--font-size-medium);
     border-radius: 5rem;
-    width: 100px;
+    width: 90px;
 }
 
 .single img {
@@ -678,19 +678,13 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
         font-size: var(--font-size-large);
     }
 
-    .contact {
-        bottom: 30px;
-        margin-right: 0;
-    }
-
-    .contact a {
-        width: 35px;
-        height: 35px;
+    .contact, .contact a {
+      display: none;
     }
 
     /* About */
     .about {
-        margin: 5rem 2rem 2rem;
+        margin: 2rem;
     }
 
     .about-img {
@@ -705,6 +699,24 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     .about-content p {
         font-size: var(--font-size-x-large);
     }
+
+    .about-contact {
+        display: block;
+        justify-content: space-between;
+        width: 20rem;
+    }
+
+    .about-contact a {
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        color: var(--primary-color);
+    }
+
+    body.dark-mode .about-contact a {
+        color: var(--primary-color2);
+    }
+    
 
     /* Projects */
     .projects {
@@ -748,6 +760,10 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     /* Skills */
     .skills {
         padding: 2rem;
+    }
+
+    .single {
+        width: 70px;
     }
 
     /* Contact form */
