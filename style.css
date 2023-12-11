@@ -454,7 +454,7 @@ body.dark-mode .about-img .circle-spin {
 }
 
 .summary-details .links {
-    margin: 1rem;
+    margin-top: 1rem;
 }
 
 .summary-details a {
@@ -649,11 +649,11 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 
     /* Update styles for home section */
     .home {
-        padding: 5rem 2rem;
+        padding: 8rem 2rem;
     }
 
     .home-content h3 {
-        font-size: var(--font-size-large);
+        font-size: var(--font-size-x-large);
     }
 
     .home-content h1 {
@@ -677,8 +677,10 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
     }
 
     .contact {
-        bottom: -60px;
+        bottom: 60px;
+        margin-right: 0;
     }
+
     .contact a {
         width: 35px;
         height: 35px;
@@ -686,7 +688,7 @@ body.dark-mode .fa-sharp.fa-solid.fa-arrow-up {
 
     /* About */
     .about {
-        margin: 2rem;
+        margin: 5rem 2rem 2rem;
     }
 
     .about-img {
