@@ -16,7 +16,7 @@
 
 <body>
     <header class="header">
-        <a href="" class="logo">TheBlessed <i class="fa-solid fa-code"></i></a>
+        <a href="" class="logo">TheBlessed <i class="fa-solid fa-code" aria-hidden="true"></i></a>
 
         <nav class="navbar">
             <a href="#home" class="span">Home</a>
@@ -41,12 +41,12 @@
                 <a href="#contact-form">Contact</a>
             </div>
         </div>
-        <i class="openbtn fas fa-bars" onclick="openNav()"></i>
+        <i class="openbtn fas fa-bars" onclick="openNav()" aria-label="Menu"></i>
 
         <!-- Dark & Light mode toggle-->
         <div class="toggle-container">
-            <span id="dark-mode-icon" class="fas fa-moon"></span>
-            <span id="light-mode-icon" class="fas fa-sun"></span>
+            <span id="dark-mode-icon" class="fas fa-moon" aria-label="Toggle Dark Mode"></span>
+            <span id="light-mode-icon" class="fas fa-sun" aria-label="Toggle Light Mode"></span>
         </div>
 
     </header>
@@ -56,7 +56,7 @@
         <div class="home-content">
             <h3>Hi, 
                 <h1>I am Blessing, a
-               <span class="text-gradient">Software Engineer</span> who is passionate about <span class="text-gradient">Solving complex problems.</span>
+               <span class="text-gradient">Software developer</span> who is passionate about <span class="text-gradient">solving complex problems.</span>
                 </h1>
             </h3>
             <p>I am constantly learning new technologies and
@@ -256,7 +256,7 @@
 
                 <textarea id="Message" name="Message" placeholder="Message"></textarea>
 
-                <button type="submit">Send <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                <button type="submit">Send <i class="fa-sharp fa-solid fa-arrow-right" aria-hidden="true"></i></button>
 
             </form>
         </div>
@@ -267,8 +267,14 @@
         <p>Copyright &copy; 2023. All Rights Reserved</p>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-sharp fa-solid fa-arrow-up"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" aria-label="Go to top"><i class="fa-sharp fa-solid fa-arrow-up" aria-hidden="true"></i></button>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/EaselPlugin.min.js"></script>
+    
     <script src="main.js"></script>
 </body>
 
