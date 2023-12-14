@@ -154,34 +154,3 @@ tl.fromTo(
       delay: 0.5,
     }
   );
-
-//About section
-// Animate elements on scroll
-gsap.from(".about-content", {
-    opacity: 0,
-    y: 50,
-    duration: 0.5,
-    ease: "power2.out",
-    scrollTrigger: {
-        trigger: ".about-content",
-        start: "top 70%",
-        end: "bottom 20%",
-        scrub: true,
-    }
-});
-
-gsap.from(".projects", {
-  opacity: 0,
-  y: 50,
-  duration: 0.5,
-  ease: "power2.out",
-  scrollTrigger: {
-    trigger: ".projects",
-    start: "top 70%",
-    end: "bottom 20%",
-    scrub: true,
-  },
-});
-
-
-

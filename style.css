@@ -101,7 +101,7 @@ body.dark-mode header .logo {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     padding-right: 5rem;
-    color: var(--secondary-color2);
+    color: var(--primary-color);
 }
 
 .navbar a:last-child {
@@ -109,7 +109,7 @@ body.dark-mode header .logo {
 }
 
 .navbar a:hover,
-.navbar .span {
+.navbar {
     color: var(--secondary-color);
 }
 
@@ -137,14 +137,10 @@ body.dark-mode .overlay{
     margin-top: 2rem;
 }
 
-.overlay-content .span {
-    color: var(--secondary-color);
-}
-
 .overlay a {
     padding: 1rem;
     font-size: var(--font-size-xx-large);
-    color: var(--secondary-color2);
+    color: var(--primary-color);
     display: block;
     transition: 0.3s;
 }
