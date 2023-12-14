@@ -127,6 +127,7 @@ body.dark-mode header .logo {
 }
 body.dark-mode .overlay{
     background: var(--primary-color);
+    color: var(--primary-color2)
 }
 
 .overlay-content {
