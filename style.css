@@ -104,6 +104,14 @@ body.dark-mode header .logo {
     color: var(--primary-color);
 }
 
+body.dark-mode .navbar a {
+    color: var(--primary-color2);
+}
+
+body.dark-mode .navbar a:hover {
+    color: var(--secondary-color);
+}
+
 .navbar a:last-child {
     padding-left: 0;
 }
@@ -125,9 +133,9 @@ body.dark-mode header .logo {
     overflow: hidden;
     transition: 0.5s;
 }
+
 body.dark-mode .overlay{
     background: var(--primary-color);
-    color: var(--primary-color2)
 }
 
 .overlay-content {
@@ -144,6 +152,14 @@ body.dark-mode .overlay{
     color: var(--primary-color);
     display: block;
     transition: 0.3s;
+}
+
+body.dark-mode .overlay a{
+    color: var(--primary-color2);
+}
+
+body.dark-mode .overlay a:hover {
+    color: var(--secondary-color);
 }
 
 .overlay a:hover,
